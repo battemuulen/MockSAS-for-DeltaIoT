@@ -7,6 +7,6 @@ Profiles are specified in the profile folder, a profile of SWIM (a SAS Exemplar)
 python run.py 10 results.csv
 
 # This extension provides profiles for DeltaIoT SAS
-This work was done as a part of Bachelor Thesis work at Vrije Universiteit Amsterdam.
+This work was done as a part of Bachelor Thesis project at Vrije Universiteit Amsterdam.
 
 The origininal MockSAS version can be found by this link - https://github.com/EGAlberts/MockSAS
