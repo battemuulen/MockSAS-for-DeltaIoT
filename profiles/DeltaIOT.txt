@@ -1,0 +1,19 @@
+LowSNR{
+    features: {
+        motes_snr: uniform(0.459707, 0.639706)
+    }
+    arms: {
+        FifteenMotes: utilityDeltaIoT(motes_snr, normal(0.4853, 0.15), uniform(0.318059, 0.673056), 15)
+        ThirtySevenMotes: utilityDeltaIoT(motes_snr, normal(0.4853, 0.15), uniform(0.318059, 0.673056), 37)
+    } }
+
+HighSNR{
+    features: {
+        motes_snr: uniform(0.647059, 0.720588)
+    }
+    arms: {
+        FifteenMotes: utilityDeltaIoT(motes_snr, normal(0.4712, 0.15), uniform(0.318059, 0.673056), 15)
+        ThirtySevenMotes: utilityDeltaIoT(motes_snr, normal(0.4712, 0.15), uniform(0.318059, 0.673056), 37)
+    } }
+Trace: (LowSNR, 215) (HighSNR, 215)
+
