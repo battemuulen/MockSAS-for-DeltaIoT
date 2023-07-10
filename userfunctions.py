@@ -72,9 +72,9 @@ def utilityDeltaIoT(motes_snr, packet_loss, motes_load, number_of_motes):
     NUMBER_OF_MOTES_WEIGHT = 0.35
     
     # Calculate utilities
-    snr_utility = motes_snr / 100  # Assuming SNR is in dB and normalized to a scale of 0-1
+    snr_utility = motes_snr / 100  
     packet_loss_utility = 1 - packet_loss  # Assuming packet loss is a proportion from 0-1
-    load_utility = 1 - motes_load / number_of_motes  # Assuming motes_load is total load and we want lower load per mote
+    load_utility = 1 - motes_load / number_of_motes  
 
     # Calculate total utility
     utility = (SNR_WEIGHT * snr_utility + PACKET_LOSS_WEIGHT * packet_loss_utility +
